@@ -16,7 +16,7 @@ const NavBar = () => {
               <li
                 key={item.id}
                 className={`underline-offset-4 decoration-2 decoration-black py-2 rounded-lg px-5 hover:underline ${
-                  item.pathName == pathname ? "underline" : "no-underline"
+                  item.pathName === pathname ? "underline" : "no-underline"
                 }`}
               >
                 <Link to={item.pathName}>{item.title}</Link>
