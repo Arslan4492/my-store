@@ -66,11 +66,10 @@ const Cart = () => {
                   </svg>
                 </div>
                 <span className="text-center w-1/5 font-semibold text-sm">
-                  {" "}
-                  $ {product.price}{" "}
+                  $ {product.price}
                 </span>
                 <span className="text-center w-1/5 font-semibold text-sm">
-                  $ {product.price}{" "}
+                  $ {product.price}
                 </span>
               </div>
             );
