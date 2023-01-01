@@ -3,11 +3,11 @@ import React from "react";
 const NavBar = () => {
   return <div>
     
-<nav class=" border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900" style={{backgroundColor:"white"}}>
+<nav class=" border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900" style={{backgroundColor:" bisque"}}>
   <div class="container flex flex-wrap items-center justify-between mx-auto">
   <a href="/" class="flex items-center">
       <img src="../cart.gif" class="h-6 mr-3 sm:h-9" alt="cart" />
-      <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-black">My Store</span>
+      <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">My Store</span>
   </a>
   <div class="flex md:order-2">
       <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
