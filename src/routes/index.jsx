@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AppLayout from "../layout";
 import { Dashboard } from "../containers";
-import Men from "../containers/Men";
+import Men from "../containers/men";
 
 const AppRoutes = () => {
   return (
