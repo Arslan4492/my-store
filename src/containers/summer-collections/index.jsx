@@ -1,6 +1,4 @@
-import React from "react";
-import axios from "axios";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useQuery } from "react-query";
 import { useDispatch } from "react-redux";
 import { cartSlice } from "../../store/slice/add-to-cart";
