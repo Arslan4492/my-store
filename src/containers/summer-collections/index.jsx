@@ -5,7 +5,7 @@ import { cartSlice } from "../../store/slice/add-to-cart";
 
 const SummerCollection = () => {
   const dispatch = useDispatch();
-  const getProducts = async () => {
+  const getProducts = () => {
     const products = {
       products: [
         {
@@ -297,9 +297,9 @@ const SummerCollection = () => {
 
     return products;
   };
-  useEffect(() => {
-    getProducts();
-  }, []);
+  // useEffect(() => {
+  //   getProducts();
+  // }, []);
 
   const { status, data, error, isFetching, isLoading, refetch } = useQuery("Products", getProducts, {
     enabled: true, //agr false karty hai to 1st time func khud nai chaly ga
@@ -410,7 +410,7 @@ const SummerCollection = () => {
           </ul>
         </div>
       </div>
-      <div className='container grid grid-cols-3'>
+      <div className='grid grid-cols-3 gap-5'>
         {isLoading || isFetching ? (
           <p>Loading...</p>
         ) : (
@@ -418,11 +418,9 @@ const SummerCollection = () => {
             return categories.includes(product.category) || categories.length === 0 ? (
               <div
                 key={product.id}
-                className='w-full shadow max-w-sm bg-white rounded-lg   dark:bg-gray-800 dark:border-gray-700'
+                className='w-full shadow bg-white rounded-lg dark:bg-gray-800 dark:border-gray-700'
               >
-                <a href='#'>
-                  <img className='p-8 rounded-t-lg' src={product.images[0]} alt='product image' />
-                </a>
+                <img className='p-8 rounded-t-lg' src={product.images[0]} alt='product image' />
                 <div className='px-5 pb-5'>
                   <a href='#'>
                     <h5 className='text-xl font-semibold tracking-tight text-gray-900 dark:text-white'>

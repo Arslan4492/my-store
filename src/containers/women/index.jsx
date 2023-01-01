@@ -100,7 +100,7 @@ const Women = () => {
       >
         {kapray.map((ele) => (
           <Card style={{ width: "18rem" }} key={ele.id}>
-            <Card.Img variant='top' width='200px' src={ele.img} />
+            <img variant='top' width='200px' src={ele.img} />
 
             <Card.Body>
               <Card.Title style={{ textEmphasis: "ActiveBorder" }}>{ele.name}</Card.Title>
