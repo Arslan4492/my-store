@@ -1,15 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AppLayout from "../layout";
-import { Dashboard } from "../containers";
-import Men from "../Men/men";
+import { Dashboard, Men } from "../containers";
 
 const AppRoutes = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route element={<AppLayout />}>
-          <Route path='/' element={<Men />} />
-
+          <Route path='/men' element={<Men />} />
         </Route>
       </Routes>
     </BrowserRouter>
