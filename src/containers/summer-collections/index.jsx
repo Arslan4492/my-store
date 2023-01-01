@@ -1,3 +1,4 @@
+import axios from "axios";
 import { useEffect, useState } from "react";
 import { useQuery } from "react-query";
 import { useDispatch } from "react-redux";
@@ -6,7 +7,9 @@ import { products } from "./data.js";
 const SummerCollection = () => {
   const dispatch = useDispatch();
   const getProducts = async () => {
-    return products;
+    const { data } = await axios.get("http://localhost:4000/summercollection");
+    console.log(data);
+    return data;
   };
   useEffect(() => {
     getProducts();
@@ -146,7 +149,7 @@ const SummerCollection = () => {
         {isLoading || isFetching ? (
           <p>Loading...</p>
         ) : (
-          data?.products.map((product) => {
+          data?.map((product) => {
             return categories.includes(product.category) ||
               categories.length === 0 ? (
               <div
