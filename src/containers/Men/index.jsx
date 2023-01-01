@@ -12,14 +12,14 @@ const Men = () => {
       </div>
 
       <div className="flex flex-row">
-        <div className="w-650px h-450px p-3">
+        <div className="w-670px h-450px p-3  border-2 border-white">
           <img
             src="https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/02_western.jpg"
             alt="T Shirt"
             className="scale-100 hover:scale-105 ease-in duration-200"
           />
         </div>
-        <div className="w-650px h-450px p-3">
+        <div className="w-670px h-450px p-3  border-2 border-white">
           <img
             src="https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/01_unstitched.jpg"
             alt="T Shirt"
@@ -29,15 +29,14 @@ const Men = () => {
       </div>
 
       <div className="flex flex-row">
-        <div className="w-650px h-450px p-3">
+        <div className="w-670px h-450px p-3  border-2 border-white">
           <img
             src="https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/03_eastern.jpg"
             alt="T Shirt"
-            // className="hover:translate-x-10 hover:rotate-45"
             className="scale-100 hover:scale-105 ease-in duration-200"
           />
         </div>
-        <div className="w-650px h-450px p-3">
+        <div className="w-670px h-450px p-3  border-2 border-white">
           <img
             src="https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/04_shoes.jpg"
             alt="T Shirt"
