@@ -8,8 +8,9 @@ function WomenDetails() {
   return (
     <>
       {cartItem.length > 0 &&
-        cartItem.map((ele) => (
+        cartItem.map((ele, i) => (
           <Card style={{ width: "18rem" }}>
+            <h1>Item # {i + 1}</h1>
             <h3>{ele.name}</h3>
             <div
               style={{
