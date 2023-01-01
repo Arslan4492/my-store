@@ -1,12 +1,4 @@
-import React from "react";
-import { useDispatch } from "react-redux";
-import { cartSlice } from "../store/slice/add-to-cart";
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
-import Category from "./productCategory";
-
-const WinterCollection = () => {
-  const winterProducts = [
+export const winterProducts = [
     {
       id: 1,
       name: "leather jacket ",
@@ -177,48 +169,3 @@ const WinterCollection = () => {
 
     },
   ];
-  const dispatch = useDispatch();
-
-  return (
-    <div>
-      <Category
-        
-      />
-      {winterProducts.map((winterData) => {
-        return (
-          <Card
-            style={{
-              width: "18rem",
-              display: "inline-block",
-              marginLeft: "2rem",
-              marginBottom: "1rem",
-             
-          
-            }}
-          >
-            <Card.Img variant="top" src={winterData.imgsrc} />
-            <Card.Body>
-              <Card.Title>{winterData.title}</Card.Title>
-              <Card.Text style={{ fontWeight: "bolder" }}>
-                {winterData.price}Rs
-              </Card.Text>
-              <Button
-                variant="primary"
-                onClick={dispatch(cartSlice.actions.addToCart(winterData))}
-                style={{
-                  borderRadius: "5px",
-                  backgroundColor: "#3C79F5",
-                  padding: "10px",
-                }}
-              >
-                Add to Cart
-              </Button>
-            </Card.Body>
-          </Card>
-        );
-      })}
-    </div>
-  );
-};
-
-export default WinterCollection;

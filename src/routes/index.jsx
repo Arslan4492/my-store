@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AppLayout from "../layout";
 import { Dashboard } from "../containers";
-import WinterCollection from "../containers/WinterCollection";
+import WinterCollection from "../containers/winter-collections/WinterCollection";
 
 const AppRoutes = () => {
   return (

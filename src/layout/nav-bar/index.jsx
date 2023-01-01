@@ -16,7 +16,6 @@ const NavBar = () => {
                 Winter collection
               </Link>
             </li>
-      
           </ul>
         </div>
       </div>
