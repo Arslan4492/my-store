@@ -8,7 +8,8 @@ const AppRoutes = () => {
     <BrowserRouter>
       <Routes>
         <Route element={<AppLayout />}>
-          <Route path="/" element={<Men />} />
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/men-collection" element={<Men />} />
         </Route>
       </Routes>
     </BrowserRouter>
