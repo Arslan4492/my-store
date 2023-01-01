@@ -9,10 +9,12 @@ import img5 from "../Details/images/img5.jpg";
 import img6 from "../Details/images/img6.jpg";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { slice } from "../../Store/Slice/Cart";
+import { slice } from "../../store/Slice/Cart";
+import { Button } from "react-bootstrap";
 
 function Women() {
   const dispatch = useDispatch();
+
   const handleClick = (params) => {
     dispatch(slice.actions.addToCart(params));
   };
@@ -81,7 +83,13 @@ function Women() {
 
   return (
     <>
-      <h3 className="text-3xl font-bold underline center">WOMEN CLOTHING</h3>
+      <h3 className="text-3xl font-bold underline center">
+        WOMEN CLOTHING
+        <button className="button2">
+          <Link to="/WomenDetails"> SEE CART</Link>
+        </button>
+      </h3>
+
       <div
         style={{
           display: "flex",
@@ -111,17 +119,8 @@ function Women() {
               <Card href="#">Color:{ele.color}</Card>
               <Card href="#">Gender:{ele.gender}</Card>
             </Card.Body>
-            <button
-              style={{
-                border: "dotted",
-                margin: "15px",
-                alignContent: "center",
-                color: "gray",
-                backgroundColor: "silver",
-              }}
-              onClick={() => handleClick(ele)}
-            >
-              <Link to="/WomenDetails">ADD TO CART</Link>
+            <button className="button2" onClick={() => handleClick(ele)}>
+              ADD TO CART
             </button>
           </Card>
         ))}
