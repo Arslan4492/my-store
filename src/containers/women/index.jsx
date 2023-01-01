@@ -9,10 +9,10 @@ import img5 from "../../assets/img5.jpg";
 import img6 from "../../assets/img6.jpg";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { slice } from "../../store/Slice/Cart";
+import { slice } from "../../store/slice/Cart";
 import Footer from "../../footer";
 
-const Women=() =>{
+const Women = () => {
   const dispatch = useDispatch();
 
   const handleClick = (params) => {
@@ -83,10 +83,10 @@ const Women=() =>{
 
   return (
     <>
-      <h3 className="text-3xl font-bold underline center">
+      <h3 className='text-3xl font-bold underline center'>
         WOMEN CLOTHING
-        <button className="button2">
-          <Link to="/WomenDetails"> SEE CART</Link>
+        <button className='button2'>
+          <Link to='/WomenDetails'> SEE CART</Link>
         </button>
       </h3>
 
@@ -99,15 +99,13 @@ const Women=() =>{
         }}
       >
         {kapray.map((ele) => (
-          <Card style={{ width: "18rem" }}>
-            <Card.Img variant="top" width="200px" src={ele.img} />
+          <Card style={{ width: "18rem" }} key={ele.id}>
+            <Card.Img variant='top' width='200px' src={ele.img} />
 
             <Card.Body>
-              <Card.Title style={{ textEmphasis: "ActiveBorder" }}>
-                {ele.name}
-              </Card.Title>
+              <Card.Title style={{ textEmphasis: "ActiveBorder" }}>{ele.name}</Card.Title>
             </Card.Body>
-            <ListGroup className="list-group-flush">
+            <ListGroup className='list-group-flush'>
               <ListGroup.Item> {ele.code}</ListGroup.Item>
               <ListGroup.Item>
                 Price: Rs
@@ -116,10 +114,10 @@ const Women=() =>{
               <ListGroup.Item>Size:{ele.size}</ListGroup.Item>
             </ListGroup>
             <Card.Body>
-              <Card href="#">Color:{ele.color}</Card>
-              <Card href="#">Gender:{ele.gender}</Card>
+              <Card href='#'>Color:{ele.color}</Card>
+              <Card href='#'>Gender:{ele.gender}</Card>
             </Card.Body>
-            <button className="button2" onClick={() => handleClick(ele)}>
+            <button className='button2' onClick={() => handleClick(ele)}>
               ADD TO CART
             </button>
           </Card>
@@ -128,6 +126,6 @@ const Women=() =>{
       <Footer />
     </>
   );
-}
+};
 
 export default Women;

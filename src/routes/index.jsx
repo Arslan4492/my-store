@@ -1,6 +1,15 @@
 import AppLayout from "../layout";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Dashboard, Men, SummerCollections, Cart, WinterCollections, ChildrenCollections, WomenDetails, Women } from "../containers";
+import {
+  Dashboard,
+  Men,
+  SummerCollections,
+  Cart,
+  WinterCollections,
+  ChildrenCollections,
+  WomenDetails,
+  Women,
+} from "../containers";
 
 const AppRoutes = () => {
   return (
@@ -13,8 +22,8 @@ const AppRoutes = () => {
           <Route path='/children-collections' element={<ChildrenCollections />} />
           <Route path='/winter-Collections' element={<WinterCollections />} />
           <Route path='/cart' element={<Cart />} />
-          <Route path="/Women" element={<Women />} />
-          <Route path="/WomenDetails" element={<WomenDetails />} />
+          <Route path='/women-collections' element={<Women />} />
+          <Route path='/WomenDetails' element={<WomenDetails />} />
         </Route>
       </Routes>
     </BrowserRouter>
