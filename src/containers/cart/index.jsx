@@ -4,7 +4,6 @@ const Cart = () => {
   const mycart = useSelector((state) => {
     return state.cart;
   });
-
   return (
     <div className="container mx-auto mt-10">
       <div className="flex shadow-md my-10">
