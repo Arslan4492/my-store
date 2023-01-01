@@ -7,6 +7,15 @@ function WomenDetails() {
 
   return (
     <>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          fontWeight: "bold",
+        }}
+      >
+        CART
+      </div>
       {cartItem.length > 0 &&
         cartItem.map((ele, i) => (
           <Card style={{ width: "18rem" }}>

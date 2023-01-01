@@ -11,6 +11,7 @@ import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { slice } from "../../store/Slice/Cart";
 import { Button } from "react-bootstrap";
+import Footer from "../../footer";
 
 function Women() {
   const dispatch = useDispatch();
@@ -125,6 +126,7 @@ function Women() {
           </Card>
         ))}
       </div>
+      <Footer />
     </>
   );
 }
