@@ -3,7 +3,7 @@ import axios from "axios";
 import { useEffect } from "react";
 import { useQuery } from "react-query";
 import { useDispatch } from "react-redux";
-import { cartSlice } from "../store/slice/add-to-cart";
+import { cartSlice } from "../../store/slice/add-to-cart";
 
 const SummerCollection = () => {
   const dispatch = useDispatch();
