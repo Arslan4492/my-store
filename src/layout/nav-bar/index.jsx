@@ -51,7 +51,7 @@ const NavBar = () => {
             <ul class="flex flex-col p-4 mt-4 border  rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0  -800  ">
               <li>
                 <a
-                  href="#"
+                  href="/"
                   class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
                   aria-current="page"
                 >
@@ -60,7 +60,7 @@ const NavBar = () => {
               </li>
               <li>
                 <a
-                  href="/MenCollection"
+                  href="/men-collection"
                   class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
                   Men
