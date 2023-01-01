@@ -3,7 +3,7 @@ import React from "react";
 const Men = () => {
   return (
     <>
-      <div style={{ width: "100%", height: "50px" }}>
+      <div className="w-full h-50px">
         <img
           width="100%"
           src="https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/05_inside_banner_wb.jpg"
@@ -11,37 +11,37 @@ const Men = () => {
         />
       </div>
 
-      <div style={{ display: "flex", padding: "20px" }}>
-        <div style={{ width: "650px", height: "450px" }}>
+      <div className="flex flex-row">
+        <div className="w-650px h-450px p-3">
           <img
             src="https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/02_western.jpg"
             alt="T Shirt"
-            className="transform-scale-105 transition-transform duration-500"
+            className="scale-100 hover:scale-105 ease-in duration-200"
           />
         </div>
-        <div
-          style={{ margin: "0 10px", width: "650px", height: "450px" }}
-          className="onMouseEnter"
-        >
+        <div className="w-650px h-450px p-3">
           <img
             src="https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/01_unstitched.jpg"
             alt="T Shirt"
-            className="transform-scale-105 transition-transform duration-100"
+            className="scale-100 hover:scale-105 ease-in duration-200"
           />
         </div>
       </div>
 
-      <div style={{ display: "flex", padding: "20px" }}>
-        <div style={{ width: "650px", height: "750px" }}>
+      <div className="flex flex-row">
+        <div className="w-650px h-450px p-3">
           <img
-            src="https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/02_western.jpg"
+            src="https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/03_eastern.jpg"
             alt="T Shirt"
+            // className="hover:translate-x-10 hover:rotate-45"
+            className="scale-100 hover:scale-105 ease-in duration-200"
           />
         </div>
-        <div style={{ margin: "0 10px", width: "650px", height: "750px" }}>
+        <div className="w-650px h-450px p-3">
           <img
-            src="https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/01_unstitched.jpg"
+            src="https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/04_shoes.jpg"
             alt="T Shirt"
+            className="scale-100 hover:scale-105 ease-in duration-200"
           />
         </div>
       </div>
