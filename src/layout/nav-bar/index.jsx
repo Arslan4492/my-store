@@ -88,7 +88,14 @@ const NavBar = () => {
         </div>
       </div>
     </nav>
-  );
-};
+// import Navbar from "../../containers/Navbar";
 
-export default NavBar;
+// const NavBar = () => {
+//   return (
+//     <div>
+//       <Navbar />
+//     </div>
+//   );
+// };
+
+// export default NavBar;
