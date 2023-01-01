@@ -1,15 +1,6 @@
-import React from "react";
-import Card from "react-bootstrap/Card";
-import ListGroup from "react-bootstrap/ListGroup";
-import img1 from "../../assets/img1.jpg";
-import img2 from "../../assets/img2.jpg";
-import img3 from "../../assets/img3.jpg";
-import img4 from "../../assets/img4.jpg";
-import img5 from "../../assets/img5.jpg";
-import img6 from "../../assets/img6.jpg";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { slice } from "../../store/Slice/Cart";
+import { slice } from "../../store/slice/Cart";
 import Footer from "../../footer";
 import { kapray } from "./data";
 
@@ -39,7 +30,7 @@ const Women = () => {
         //   height: "100%",
         //   flexBasis: "100%",
         // }}
-        class='grid grid-cols-4'
+        class='grid grid-cols-3 gap-5'
       >
         {kapray.map((ele) => (
           <div class='max-w-sm auto-rows-auto bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 grid  '>
