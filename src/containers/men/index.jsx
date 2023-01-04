@@ -1,48 +1,43 @@
-import React from "react";
+import React, { useEffect, useState } from "react"
+import { getCategories } from "../../API"
+import { useQuery } from 'react-query'
 
 const Men = () => {
+  const { isLoading, error, data:categories }  = useQuery('categories', getCategories)
+  const [categoryMen,setCategoryMen] = useState([])
+
+  useEffect(() => {
+    if(categories) setCategoryMen(categories.filter(c=>c.title==="MEN"))
+  }, [categories]);
+  
+  if(isLoading){
+    return <h2 className="flex justify-center items-center m-5 p-5">lOADING...</h2>
+  }
+
+  if(error){
+    return <h2 className="flex justify-center items-center m-5 p-5">SERVER ERROR</h2>
+  }
+
   return (
     <>
-      <div className="w-full h-50px">
+    {categoryMen.length>0 && ( <div className="w-full h-50px p-3">
         <img
-          width="100%"
-          src="https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/05_inside_banner_wb.jpg"
-          alt="T Shirt"
+          src={categoryMen[0].image}
+          alt={`${categoryMen[0].title} image`}
+          className="w-full scale-100 hover:scale-105 ease-in duration-200 hover:cursor-pointer"
         />
-      </div>
+      </div>)}
 
-      <div className="flex flex-row">
-        <div className="w-670px h-450px p-3  border-2 border-white">
+      <div className="flex flex-row flex-wrap">
+     {categoryMen.length>0 && categoryMen[0]?.subCategories.map((category)=>
+     (<div className="w-1/2 h-450px p-3  border-2 border-white hover:cursor-pointer" key={category.id}>
           <img
-            src="https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/02_western.jpg"
-            alt="T Shirt"
-            className="scale-100 hover:scale-105 ease-in duration-200"
+            src={category.image}
+            alt={`${category.title} image`}
+            className="w-full scale-100 hover:scale-105 ease-in duration-200"
           />
-        </div>
-        <div className="w-670px h-450px p-3  border-2 border-white">
-          <img
-            src="https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/01_unstitched.jpg"
-            alt="T Shirt"
-            className="scale-100 hover:scale-105 ease-in duration-200"
-          />
-        </div>
-      </div>
-
-      <div className="flex flex-row">
-        <div className="w-670px h-450px p-3  border-2 border-white">
-          <img
-            src="https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/03_eastern.jpg"
-            alt="T Shirt"
-            className="scale-100 hover:scale-105 ease-in duration-200"
-          />
-        </div>
-        <div className="w-670px h-450px p-3  border-2 border-white">
-          <img
-            src="https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/04_shoes.jpg"
-            alt="T Shirt"
-            className="scale-100 hover:scale-105 ease-in duration-200"
-          />
-        </div>
+        </div>)
+        ) }
       </div>
     </>
   );
