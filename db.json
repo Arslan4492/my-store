@@ -7,18 +7,18 @@
             "subCategories": [
                 {
                     "id": 2,
+                    "title": "UNSTITCHED",
+                    "image": "https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/01_unstitched.jpg"
+                },
+                {
+                    "id": 3,
                     "title": "WESTERN",
                     "image": "https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/02_western.jpg"
                 },
                 {
-                    "id": 3,
-                    "title": "UNSTITCHED",
-                    "image" : "https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/01_unstitched.jpg"
-                },
-                {
                     "id": 4,
                     "title": "EASTERN",
-                    "image":"https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/03_eastern.jpg"
+                    "image": "https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/03_eastern.jpg"
                 },
                 {
                     "id": 5,
