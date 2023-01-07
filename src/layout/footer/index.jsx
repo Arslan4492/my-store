@@ -1,5 +1,3 @@
-import React from "react";
-
 const Footer = () => {
   return (
     <div
@@ -10,28 +8,19 @@ const Footer = () => {
         fontFamily: "inherit",
       }}
     >
-      <footer className='footer' style={{ display: "flex", paddingLeft: "11rem" }}>
-        <div
-          style={{
-            paddingTop: "5rem",
-            paddingLeft: "50px",
+      <footer className='footer px-8 grid grid-cols-4'>
+        <ul className='mt-16' style={{ listStyle: "none" }}>
+          <li>How can we help you?</li>
 
-            fontFamily: "Arial",
-          }}
-        >
-          <ul style={{ listStyle: "none" }}>
-            <li>How can we help you?</li>
+          <li>
+            <a href='http://outfitter.com'></a>ContactUs@Bootcamp.com
+          </li>
 
-            <li>
-              <a href='http://outfitter.com'></a>ContactUs@Bootcamp.com
-            </li>
+          <li>UAN: 1234-1111-111-12</li>
+          <li>Sat-Sun 9:00AM to 5:00PM </li>
+        </ul>
 
-            <li>UAN: 1234-1111-111-12</li>
-            <li>Sat-Sun 9:00AM to 5:00PM </li>
-          </ul>
-        </div>
-
-        <div style={{ paddingTop: "25px", fontFamily: "Arial" }}>
+        <div className='mt-8'>
           <ul
             style={{
               listStyle: "none",
@@ -49,7 +38,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div style={{ paddingTop: "25px", fontFamily: "Arial" }}>
+        <div className='mt-8'>
           <ul
             style={{
               listStyle: "none",
@@ -68,14 +57,8 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div style={{ paddingTop: "25px", fontFamily: "Arial" }}>
-          <ul
-            style={{
-              listStyle: "none",
-              textDecoration: "none",
-              paddingLeft: "5rem",
-            }}
-          >
+        <div className='mt-8'>
+          <ul>
             <br /> <br />
             <li>PAYMENT METHOD</li>
             <img
