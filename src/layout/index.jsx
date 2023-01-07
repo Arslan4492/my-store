@@ -1,7 +1,10 @@
 import { Outlet } from "react-router-dom";
+import Footer from "../footer";
 import Navbar from "./nav-bar";
+
 const AppLayout = () => {
   return (
+    <>
     <div>
       <div className='content-container h-full col-span-5'>
         <Navbar />
@@ -12,7 +15,10 @@ const AppLayout = () => {
         </div>
       </div>
     </div>
+<Footer/>
+    </>
   );
+  
 };
 
 export default AppLayout;

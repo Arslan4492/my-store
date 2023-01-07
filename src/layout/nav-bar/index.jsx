@@ -2,9 +2,11 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { navbarData } from "./data";
 
+
 const NavBar = () => {
   const { pathname } = useLocation();
   return (
+    <>
     <div className='flex justify-center'>
       <nav className='self-center w-full max-w-7xl  '>
         <div className='flex flex-col lg:flex-row justify-around items-center border-b-2'>
@@ -13,7 +15,8 @@ const NavBar = () => {
             {navbarData.map((item) => (
               <li
                 key={item.id}
-                className={`underline-offset-4 decoration-2 decoration-black py-2 rounded-lg px-5 hover:underline ${
+                className={`underline-offset-4 decoration-2 decoration-black py-2 rounded-lg px-5 hover:underline 
+                ${
                   item.pathName == pathname ? "underline" : "no-underline"
                 }`}
               >
@@ -56,8 +59,12 @@ const NavBar = () => {
         </div>
       </nav>
     </div>
+   
+    </>
   );
-};
+
+};  
+
 
 export default NavBar;
 
