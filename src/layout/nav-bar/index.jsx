@@ -5,11 +5,13 @@ import { navbarData } from "./data";
 const NavBar = () => {
   const { pathname } = useLocation();
   return (
-    <div className='flex justify-center'>
-      <nav className='self-center w-full max-w-7xl  '>
-        <div className='flex flex-col lg:flex-row justify-around items-center border-b-2'>
-          <h1 className='uppercase pl-5 py-4 text-xl font-sans font-bold'>fashionhub</h1>
-          <ul className='hidden lg:flex items-center text-[18px] font-semibold pl-32'>
+    <div className="flex justify-center">
+      <nav className="self-center w-full max-w-7xl  ">
+        <div className="flex flex-col lg:flex-row justify-around items-center border-b-2">
+          <h1 className="uppercase pl-5 py-4 text-xl font-sans font-bold">
+            fashionhub
+          </h1>
+          <ul className="hidden lg:flex items-center text-[18px] font-semibold pl-32">
             {navbarData.map((item) => (
               <li
                 key={item.id}
@@ -21,36 +23,35 @@ const NavBar = () => {
               </li>
             ))}
           </ul>
-          <div className=' text-center text-base pr-5 inline-flex'>
-            <span
-              href='#'
-              className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'
-            >
-              <i className='fa fa-twitter'></i>
+          <div className=" text-center text-base pr-5 inline-flex">
+            <span className="w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer">
+              <a href="https://twitter.com/bitsoltech?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                <i className="fa fa-twitter"></i>
+              </a>
             </span>
-            <span
-              href='#'
-              className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'
-            >
-              <i className='fa fa-instagram'></i>
+
+            <span className="w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer">
+              <a href="https://www.instagram.com/bitsoltechnologies/">
+                <i className="fa fa-instagram"></i>
+              </a>
             </span>
-            <span
-              href='#'
-              className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'
-            >
-              <i className='fa fa-facebook'></i>
+
+            <span className="w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer">
+              <a href="https://web.facebook.com/bitsoltechnologies/?_rdc=1&_rdr">
+                <i className="fa fa-facebook"></i>
+              </a>
             </span>
-            <span
-              href='#'
-              className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'
-            >
-              <i className='fa fa-google'></i>
+
+            <span className="w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer">
+              <a href="https://bitsol.tech/">
+                <i className="fa fa-google"></i>
+              </a>
             </span>
-            <span
-              href='#'
-              className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'
-            >
-              <i className='fa fa-linkedin'></i>
+            <span className="w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer">
+              <a href="https://www.linkedin.com/company/bitsoltech/?originalSubdomain=pk">
+                {" "}
+                <i className="fa fa-linkedin"></i>
+              </a>
             </span>
           </div>
         </div>
