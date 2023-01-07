@@ -83,6 +83,7 @@ const SummerCollection = () => {
               position: "absolute",
               background: "white",
               border: "1px solid",
+              zIndex: 10,
             }}
             className="p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200"
             aria-labelledby="dropdownBgHoverButton"
@@ -141,104 +142,61 @@ const SummerCollection = () => {
           </ul>
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-5">
-        {isLoading || isFetching ? (
-          <p>Loading...</p>
-        ) : (
-          data?.map((product) => {
-            return categories.includes(product.category) ||
-              categories.length === 0 ? (
-              <div
-                key={product.id}
-                className="w-full shadow bg-white rounded-lg dark:bg-gray-800 dark:border-gray-700"
-              >
-                <img
-                  className="p-8 rounded-t-lg"
-                  src={product.images[0]}
-                  alt="product image"
-                />
-                <div className="px-5 pb-5">
-                  <a href="#">
-                    <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                      {product.title}
-                    </h5>
-                  </a>
-                  <div className="flex items-center mt-2.5 mb-5">
-                    <svg
-                      aria-hidden="true"
-                      className="w-5 h-5 text-yellow-300"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <title>First star</title>
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                    </svg>
-                    <svg
-                      aria-hidden="true"
-                      className="w-5 h-5 text-yellow-300"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <title>Second star</title>
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                    </svg>
-                    <svg
-                      aria-hidden="true"
-                      className="w-5 h-5 text-yellow-300"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <title>Third star</title>
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                    </svg>
-                    <svg
-                      aria-hidden="true"
-                      className="w-5 h-5 text-yellow-300"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <title>Fourth star</title>
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                    </svg>
-                    <svg
-                      aria-hidden="true"
-                      className="w-5 h-5 text-yellow-300"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <title>Fifth star</title>
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                    </svg>
-                    <span className="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">
-                      5.0
-                    </span>
+      {isLoading || isFetching ? (
+        <p>Loading...</p>
+      ) : (
+        <div className="bg-white">
+          <div className="mx-auto max-w-2xl pb-16 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+            <h1 class="text-center text-4xl mb-10 font-bold text-slate-900">
+              Summer Collection
+            </h1>
+            <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-3 lg:gap-x-8">
+              {data?.map((product) => {
+                return categories.includes(product.category) ||
+                  categories.length === 0 ? (
+                  <div
+                    key={product.id}
+                    className="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white"
+                  >
+                    <div className="aspect-w-3 aspect-h-4 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-96">
+                      <img
+                        src={product.images[0]}
+                        alt={product.title}
+                        className="h-full w-full object-cover object-center sm:h-full sm:w-full"
+                      />
+                    </div>
+                    <div className="flex flex-1 flex-col space-y-2 p-4">
+                      <h3 className="text-md font-bold text-gray-900">
+                        <span aria-hidden="true" />
+                        {product.title}
+                      </h3>
+                      <p className="text-sm text-gray-500">
+                        {" "}
+                        {product.description}
+                      </p>
+                      <div className="flex items-center justify-between">
+                        <p className="text-base text-3xl font-bold  text-gray-900">
+                          $ {product.price}
+                        </p>
+                        <button
+                          onClick={() =>
+                            dispatch(cartSlice.actions.addToCart(product))
+                          }
+                          className="cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                        >
+                          Add to cart
+                        </button>
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex items-center justify-between">
-                    <span className="text-3xl font-bold text-gray-900 dark:text-white">
-                      $ {product.price}
-                    </span>
-                    <button
-                      onClick={() =>
-                        dispatch(cartSlice.actions.addToCart(product))
-                      }
-                      className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                    >
-                      Add to cart
-                    </button>
-                  </div>
-                </div>
-              </div>
-            ) : (
-              ""
-            );
-          })
-        )}
-      </div>
+                ) : (
+                  ""
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 };
