@@ -26,7 +26,6 @@ const NavBar = () => {
               className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'
               to='/cart'
             >
-              {" "}
               <i className='fa fa-lg fa-shopping-cart '></i>
             </Link>
 

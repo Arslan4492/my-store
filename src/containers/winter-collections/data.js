@@ -2,7 +2,8 @@ export const winterProducts = [
   {
     id: 1,
     name: "leather jacket ",
-    imgsrc: "https://ids.si.edu/ids/deliveryService?max_w=550&id=NMAH-JN2021-04236-000001",
+    imgsrc:
+      "https://ids.si.edu/ids/deliveryService?max_w=550&id=NMAH-JN2021-04236-000001",
     price: 7250,
     category: "Jackets",
   },
@@ -30,7 +31,8 @@ export const winterProducts = [
   {
     id: 5,
     name: "Leather jacket ",
-    imgsrc: "https://chapal.fr/wp-content/uploads/2021/12/Brooklyn-Fitter-che%CC%80vre-brun.jpg",
+    imgsrc:
+      "https://chapal.fr/wp-content/uploads/2021/12/Brooklyn-Fitter-che%CC%80vre-brun.jpg",
     price: 8600,
     category: "Jackets",
   },
@@ -61,14 +63,16 @@ export const winterProducts = [
   {
     id: 9,
     name: "winter Shirt",
-    imgsrc: "https://images.meesho.com/images/products/153477153/znyyc_256.webp",
+    imgsrc:
+      "https://images.meesho.com/images/products/153477153/znyyc_256.webp",
     price: 5000,
     category: "winterShirt",
   },
   {
     id: 10,
     name: "winter Shirt",
-    imgsrc: "https://www.kosha.co/journal/wp-content/uploads/2022/08/word-image-7592-2.jpeg",
+    imgsrc:
+      "https://www.kosha.co/journal/wp-content/uploads/2022/08/word-image-7592-2.jpeg",
     price: 5995,
     category: "winterShirt",
   },
@@ -83,7 +87,8 @@ export const winterProducts = [
   {
     id: 12,
     name: "winter Shirt",
-    imgsrc: "https://uturn-store.com/wp-content/uploads/2022/10/uturn-winter-shirts-10-600x600.jpg",
+    imgsrc:
+      "https://uturn-store.com/wp-content/uploads/2022/10/uturn-winter-shirts-10-600x600.jpg",
     price: 12000,
     category: "winterShirt",
   },
@@ -104,7 +109,8 @@ export const winterProducts = [
   {
     id: 15,
     name: "winter Collection Pent",
-    imgsrc: "https://www.popsci.com/uploads/2021/02/24/CF7ILENJDFEW5EBGOHEPPAXJIU.jpg?auto=webp",
+    imgsrc:
+      "https://www.popsci.com/uploads/2021/02/24/CF7ILENJDFEW5EBGOHEPPAXJIU.jpg?auto=webp",
     price: 9500,
     category: "winterPants",
   },
@@ -119,7 +125,8 @@ export const winterProducts = [
   {
     id: 17,
     name: "winter Collection Pent",
-    imgsrc: "https://cdn.shopify.com/s/files/1/0046/5885/6006/products/5_2_900x.jpg?v=1616830704",
+    imgsrc:
+      "https://cdn.shopify.com/s/files/1/0046/5885/6006/products/5_2_900x.jpg?v=1616830704",
     price: 7500,
     category: "winterPants",
   },
@@ -137,7 +144,7 @@ export const winterProducts = [
     imgsrc:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWa-GvDxVC0TkS5PfX-PtVHZeTzy13Z_cSow&usqp=CAU",
     price: 7500,
-    category: "winterPants",
+    category: "winterPants"
   },
   {
     id: 20,
@@ -145,6 +152,6 @@ export const winterProducts = [
     imgsrc:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWa-GvDxVC0TkS5PfX-PtVHZeTzy13Z_cSow&usqp=CAU",
     price: 7500,
-    category: "winterPants",
-  },
+    category: "winterPants"
+  }
 ];
