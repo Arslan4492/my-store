@@ -29,30 +29,37 @@ const NavBar = () => {
               <i className='fa fa-lg fa-shopping-cart '></i>
             </Link>
 
-            <span
-              href='#'
-              className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'
-            >
-              <i className='fa fa-instagram'></i>
-            </span>
-            <span
-              href='#'
-              className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'
-            >
-              <i className='fa fa-facebook'></i>
-            </span>
-            <span
-              href='#'
-              className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'
-            >
-              <i className='fa fa-google'></i>
-            </span>
-            <span
-              href='#'
-              className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'
-            >
-              <i className='fa fa-linkedin'></i>
-            </span>
+            <div className=' text-center text-base pr-5 inline-flex'>
+              <span className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'>
+                <a href='https://twitter.com/bitsoltech?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor'>
+                  <i className='fa fa-twitter'></i>
+                </a>
+              </span>
+
+              <span className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'>
+                <a href='https://www.instagram.com/bitsoltechnologies/'>
+                  <i className='fa fa-instagram'></i>
+                </a>
+              </span>
+
+              <span className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'>
+                <a href='https://web.facebook.com/bitsoltechnologies/?_rdc=1&_rdr'>
+                  <i className='fa fa-facebook'></i>
+                </a>
+              </span>
+
+              <span className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'>
+                <a href='https://bitsol.tech/'>
+                  <i className='fa fa-google'></i>
+                </a>
+              </span>
+              <span className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'>
+                <a href='https://www.linkedin.com/company/bitsoltech/?originalSubdomain=pk'>
+                  {" "}
+                  <i className='fa fa-linkedin'></i>
+                </a>
+              </span>
+            </div>
           </div>
         </div>
       </nav>
