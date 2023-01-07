@@ -1,4 +1,3 @@
-import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { navbarData } from "./data";
 
@@ -31,30 +30,30 @@ const NavBar = () => {
 
             <div className=' text-center text-base pr-5 inline-flex'>
               <span className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'>
-                <a href='https://twitter.com/bitsoltech?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor'>
+                <a
+                  href='https://twitter.com/bitsoltech?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor'
+                  target='_blank'
+                >
                   <i className='fa fa-twitter'></i>
                 </a>
               </span>
-
               <span className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'>
-                <a href='https://www.instagram.com/bitsoltechnologies/'>
+                <a href='https://www.instagram.com/bitsoltechnologies/' target='_blank'>
                   <i className='fa fa-instagram'></i>
                 </a>
               </span>
-
               <span className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'>
-                <a href='https://web.facebook.com/bitsoltechnologies/?_rdc=1&_rdr'>
+                <a href='https://web.facebook.com/bitsoltechnologies/?_rdc=1&_rdr' target='_blank'>
                   <i className='fa fa-facebook'></i>
                 </a>
               </span>
-
               <span className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'>
-                <a href='https://bitsol.tech/'>
+                <a href='https://bitsol.tech/' target='_blank'>
                   <i className='fa fa-google'></i>
                 </a>
               </span>
               <span className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'>
-                <a href='https://www.linkedin.com/company/bitsoltech/?originalSubdomain=pk'>
+                <a href='https://www.linkedin.com/company/bitsoltech/?originalSubdomain=pk' target='_blank'>
                   {" "}
                   <i className='fa fa-linkedin'></i>
                 </a>
