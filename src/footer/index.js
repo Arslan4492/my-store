@@ -21,11 +21,11 @@ function Footer() {
             }}
           >
             <ul style={{ listStyle: "none" }}>
-              <li>CAN WE HELP YOU</li>
+              <li>CAN WE HELP YOU?</li>
               <br />
               <li>SEND EMAIL</li>
               <li>
-                <a href="http://outfitter.com"></a>CONTACTUS@OUTFITTERS.com
+                <a href="http://outfitter.com"></a>CONTACTUS@FASHIONHUB.com
               </li>
               <br />
               <li>UAN: 1234-1111-111-12</li>
@@ -60,7 +60,7 @@ function Footer() {
                 paddingLeft: "5rem",
               }}
             >
-              <li>ABOUT OUTFITTERS</li>
+              <li>ABOUT FASHIONHUB</li>
               <br />
               <li>ABOUT US</li>
               <li>RETAIL STORE</li>
@@ -120,7 +120,7 @@ function Footer() {
           >
             <li style={{ paddingRight: "10px" }}>
               {" "}
-              <span>&copy; 2022 OUTFITTERS</span>
+              <span>&copy; 2023 FASHIONHUB</span>
             </li>
             /
             <li style={{ paddingLeft: "10px", paddingRight: "10px" }}>
