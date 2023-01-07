@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { slice } from "../../store/Slice/Cart";
+import { slice } from "../../store/slice/Cart";
 import { kapray } from "./data";
 import AppCard from "../../components/card";
 
