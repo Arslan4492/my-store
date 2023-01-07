@@ -5,56 +5,54 @@ import { navbarData } from "./data";
 const NavBar = () => {
   const { pathname } = useLocation();
   return (
-    <div className="flex justify-center">
-      <nav className="self-center w-full max-w-7xl  ">
-        <div className="flex flex-col lg:flex-row justify-around items-center border-b-2">
-          <h1 className="uppercase pl-5 py-4 text-xl font-sans font-bold">
-            fashionhub
-          </h1>
-          <ul className="hidden lg:flex items-center text-[18px] font-semibold pl-32">
+    <div className='flex justify-center'>
+      <nav className='self-center w-full max-w-7xl  '>
+        <div className='flex flex-col lg:flex-row justify-around items-center border-b-2'>
+          <h1 className='uppercase pl-5 py-4 text-xl font-sans font-bold'>fashionhub</h1>
+          <ul className='hidden lg:flex items-center text-[18px] font-semibold pl-32'>
             {navbarData.map((item) => (
               <li
                 key={item.id}
                 className={`underline-offset-4 decoration-2 decoration-black py-2 rounded-lg px-5 hover:underline ${
-                  item.pathName == pathname ? "underline" : "no-underline"
+                  item.pathName === pathname ? "underline" : "no-underline"
                 }`}
               >
                 <Link to={item.pathName}>{item.title}</Link>
               </li>
             ))}
           </ul>
-          <div className=" text-center text-base pr-5 inline-flex">
+          <div className=' text-center text-base pr-5 inline-flex'>
             <Link
-              className="w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer"
-              to="/cart"
+              className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'
+              to='/cart'
             >
               {" "}
-              <i className="fa fa-lg fa-shopping-cart "></i>
+              <i className='fa fa-lg fa-shopping-cart '></i>
             </Link>
 
             <span
-              href="#"
-              className="w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer"
+              href='#'
+              className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'
             >
-              <i className="fa fa-instagram"></i>
+              <i className='fa fa-instagram'></i>
             </span>
             <span
-              href="#"
-              className="w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer"
+              href='#'
+              className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'
             >
-              <i className="fa fa-facebook"></i>
+              <i className='fa fa-facebook'></i>
             </span>
             <span
-              href="#"
-              className="w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer"
+              href='#'
+              className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'
             >
-              <i className="fa fa-google"></i>
+              <i className='fa fa-google'></i>
             </span>
             <span
-              href="#"
-              className="w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer"
+              href='#'
+              className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'
             >
-              <i className="fa fa-linkedin"></i>
+              <i className='fa fa-linkedin'></i>
             </span>
           </div>
         </div>

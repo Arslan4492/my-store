@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { slice } from "../../store/slice/Cart";
-import Footer from "../../footer";
+
 import { kapray } from "./data";
 
 const Women = () => {
@@ -72,7 +72,7 @@ const Women = () => {
           </div>
         ))}
       </div>
-      <Footer />
+      
     </>
   );
 };
