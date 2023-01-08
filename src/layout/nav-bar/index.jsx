@@ -23,7 +23,7 @@ const NavBar = () => {
               </li>
             ))}
           </ul>
-<<<<<<< HEAD
+          {/* <<<<<<< HEAD */}
           <div className=" text-center text-base pr-5 inline-flex">
             <span
               href="#"
@@ -31,40 +31,41 @@ const NavBar = () => {
             >
               <i className="fa fa-twitter"></i>
             </span>
-=======
-          <div className=' text-center text-base pr-5 inline-flex'>
-            <Link
-              className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'
-              to='/cart'
-            >
-              <i className='fa fa-lg fa-shopping-cart '></i>
-            </Link>
+            {/* ======= */}
+            <div className=" text-center text-base pr-5 inline-flex">
+              <Link
+                className="w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer"
+                to="/cart"
+              >
+                <i className="fa fa-lg fa-shopping-cart "></i>
+              </Link>
 
->>>>>>> 21e48be3c00090171824d1efd0de68a19aaad016
-            <span
-              href="#"
-              className="w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer"
-            >
-              <i className="fa fa-instagram"></i>
-            </span>
-            <span
-              href="#"
-              className="w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer"
-            >
-              <i className="fa fa-facebook"></i>
-            </span>
-            <span
-              href="#"
-              className="w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer"
-            >
-              <i className="fa fa-google"></i>
-            </span>
-            <span
-              href="#"
-              className="w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer"
-            >
-              <i className="fa fa-linkedin"></i>
-            </span>
+              {/* >>>>>>> 21e48be3c00090171824d1efd0de68a19aaad016 */}
+              <span
+                href="#"
+                className="w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer"
+              >
+                <i className="fa fa-instagram"></i>
+              </span>
+              <span
+                href="#"
+                className="w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer"
+              >
+                <i className="fa fa-facebook"></i>
+              </span>
+              <span
+                href="#"
+                className="w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer"
+              >
+                <i className="fa fa-google"></i>
+              </span>
+              <span
+                href="#"
+                className="w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer"
+              >
+                <i className="fa fa-linkedin"></i>
+              </span>
+            </div>
           </div>
         </div>
       </nav>
@@ -74,7 +75,8 @@ const NavBar = () => {
 
 export default NavBar;
 
-// <nav className=' border-gray-200 px-2 sm:px-4 rounded dark:bg-gray-900'>
+{
+  /* // <nav className=' border-gray-200 px-2 sm:px-4 rounded dark:bg-gray-900'>
 //   <div className='container flex flex-wrap items-center justify-between mx-auto'>
 //     <Link to='/' className='flex items-center'>
 //       <img src='../cart.png' className='h-8 mr-3 sm:h-9' alt='_Logo' style={{ width: 80, height: 80 }} />
@@ -163,4 +165,5 @@ export default NavBar;
 //       </ul>
 //     </div>
 //   </div>
-// </nav>
+// </nav> */
+}

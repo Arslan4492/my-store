@@ -57,7 +57,7 @@ const Men = () => {
             </div>
           ))}
       </div>
-<<<<<<< HEAD
+      {/* <<<<<<< HEAD */}
 
       <div className="flex flex-row">
         <div className="w-670px h-450px p-3  border-2 border-white">
@@ -92,10 +92,10 @@ const Men = () => {
           />
         </div>
       </div>
-    </>
-=======
     </div>
->>>>>>> 21e48be3c00090171824d1efd0de68a19aaad016
+    // =======
+    // </div>
+    // >>>>>>> 21e48be3c00090171824d1efd0de68a19aaad016
   );
 };
 
