@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { cartSlice } from "../../store/slice/add-to-cart";
+import { cartSlice } from "../../store/Slice/add-to-cart";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Category from "./product-category";
@@ -9,7 +9,8 @@ const WinterCollection = () => {
     {
       id: 1,
       name: "leather jacket ",
-      imgsrc: "https://ids.si.edu/ids/deliveryService?max_w=550&id=NMAH-JN2021-04236-000001",
+      imgsrc:
+        "https://ids.si.edu/ids/deliveryService?max_w=550&id=NMAH-JN2021-04236-000001",
       price: 7250,
       category: "Jackets",
     },
@@ -23,7 +24,8 @@ const WinterCollection = () => {
     {
       id: 3,
       name: "Alphine jacket",
-      imgsrc: "https://www.montbell.us/products/prod_img/zoom/z_2301368_bric.jpg",
+      imgsrc:
+        "https://www.montbell.us/products/prod_img/zoom/z_2301368_bric.jpg",
       price: 2500,
       category: "Jackets",
     },
@@ -37,7 +39,8 @@ const WinterCollection = () => {
     {
       id: 5,
       name: "Leather jacket ",
-      imgsrc: "https://chapal.fr/wp-content/uploads/2021/12/Brooklyn-Fitter-che%CC%80vre-brun.jpg",
+      imgsrc:
+        "https://chapal.fr/wp-content/uploads/2021/12/Brooklyn-Fitter-che%CC%80vre-brun.jpg",
       price: 8600,
       category: "Jackets",
     },
@@ -68,14 +71,16 @@ const WinterCollection = () => {
     {
       id: 9,
       name: "winter Shirt",
-      imgsrc: "https://images.meesho.com/images/products/153477153/znyyc_256.webp",
+      imgsrc:
+        "https://images.meesho.com/images/products/153477153/znyyc_256.webp",
       price: 5000,
       category: "winterShirt",
     },
     {
       id: 10,
       name: "winter Shirt",
-      imgsrc: "https://www.kosha.co/journal/wp-content/uploads/2022/08/word-image-7592-2.jpeg",
+      imgsrc:
+        "https://www.kosha.co/journal/wp-content/uploads/2022/08/word-image-7592-2.jpeg",
       price: 5995,
       category: "winterShirt",
     },
@@ -90,7 +95,8 @@ const WinterCollection = () => {
     {
       id: 12,
       name: "winter Shirt",
-      imgsrc: "https://uturn-store.com/wp-content/uploads/2022/10/uturn-winter-shirts-10-600x600.jpg",
+      imgsrc:
+        "https://uturn-store.com/wp-content/uploads/2022/10/uturn-winter-shirts-10-600x600.jpg",
       price: 12000,
       category: "winterShirt",
     },
@@ -111,7 +117,8 @@ const WinterCollection = () => {
     {
       id: 15,
       name: "winter Collection Pent",
-      imgsrc: "https://www.popsci.com/uploads/2021/02/24/CF7ILENJDFEW5EBGOHEPPAXJIU.jpg?auto=webp",
+      imgsrc:
+        "https://www.popsci.com/uploads/2021/02/24/CF7ILENJDFEW5EBGOHEPPAXJIU.jpg?auto=webp",
       price: 9500,
       category: "winterPants",
     },
@@ -126,7 +133,8 @@ const WinterCollection = () => {
     {
       id: 17,
       name: "winter Collection Pent",
-      imgsrc: "https://cdn.shopify.com/s/files/1/0046/5885/6006/products/5_2_900x.jpg?v=1616830704",
+      imgsrc:
+        "https://cdn.shopify.com/s/files/1/0046/5885/6006/products/5_2_900x.jpg?v=1616830704",
       price: 7500,
       category: "winterPants",
     },
@@ -170,12 +178,14 @@ const WinterCollection = () => {
               marginBottom: "1rem",
             }}
           >
-            <Card.Img variant='top' src={winterData.imgsrc} />
+            <Card.Img variant="top" src={winterData.imgsrc} />
             <Card.Body>
               <Card.Title>{winterData.title}</Card.Title>
-              <Card.Text style={{ fontWeight: "bolder" }}>{winterData.price}Rs</Card.Text>
+              <Card.Text style={{ fontWeight: "bolder" }}>
+                {winterData.price}Rs
+              </Card.Text>
               <Button
-                variant='primary'
+                variant="primary"
                 onClick={dispatch(cartSlice.actions.addToCart(winterData))}
                 style={{
                   borderRadius: "5px",

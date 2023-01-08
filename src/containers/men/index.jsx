@@ -44,6 +44,23 @@ const Men = () => {
           />
         </div>
       </div>
+
+      <div className="flex flex-row">
+        <div className="w-670px h-450px p-3  border-2 border-white">
+          <img
+            src="https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/03_eastern.jpg"
+            alt="T Shirt"
+            className="scale-100 hover:scale-105 ease-in duration-200"
+          />
+        </div>
+        <div className="w-670px h-450px p-3  border-2 border-white">
+          <img
+            src="https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/04_shoes.jpg"
+            alt="T Shirt"
+            className="scale-100 hover:scale-105 ease-in duration-200"
+          />
+        </div>
+      </div>
     </>
   );
 };
