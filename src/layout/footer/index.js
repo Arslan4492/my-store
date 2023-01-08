@@ -11,7 +11,7 @@ function Footer() {
           fontFamily: "inherit",
         }}
       >
-        <footer class="footer" style={{ display: "flex", paddingLeft: "5rem" }}>
+        <footer className="footer" style={{ display: "flex", paddingLeft: "5rem" }}>
           <div
             style={{
               paddingTop: "25px",

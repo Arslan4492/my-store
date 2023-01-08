@@ -1,11 +1,16 @@
 import "./App.css";
+import AppRoutes from "./routes";
 import { store } from "./store";
 import { Provider } from "react-redux";
-import AppRoutes from "./routes";
+import { QueryClient, QueryClientProvider } from "react-query";
+
+const queryClient = new QueryClient();
 function App() {
   return (
     <Provider store={store}>
-      <AppRoutes />
+      <QueryClientProvider client={queryClient}>
+        <AppRoutes />
+      </QueryClientProvider>
     </Provider>
   );
 }

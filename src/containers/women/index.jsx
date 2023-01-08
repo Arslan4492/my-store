@@ -1,86 +1,21 @@
-import React from "react";
-import Card from "react-bootstrap/Card";
-import ListGroup from "react-bootstrap/ListGroup";
-import img1 from "../Details/images/img1.jpg";
-import img2 from "../Details/images/img2.jpg";
-import img3 from "../Details/images/img3.jpg";
-import img4 from "../Details/images/img4.jpg";
-import img5 from "../Details/images/img5.jpg";
-import img6 from "../Details/images/img6.jpg";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { slice } from "../../store/Slice/Cart";
-import Footer from "../../footer";
+import Footer from "../../layout/footer";
+import { kapray } from "./data";
+import { useQuery } from "react-query";
+import axios from "axios";
 
-function Women() {
+const Women = () => {
   const dispatch = useDispatch();
 
   const handleClick = (params) => {
     dispatch(slice.actions.addToCart(params));
   };
-  const kapray = [
-    {
-      id: 1,
-      name: "REGULAR FIT TRUCKER WITH CONTRAST DETAIL",
-      code: "F0093/101/801-10401382",
-      img: img1,
-      price: 3000,
-      color: "Blue",
-      size: "L",
-      gender: "Female",
-    },
-    {
-      id: 2,
-      name: "REGULAR FIT SHERPA COLLAR TRUCKER JACKET",
-      code: "F0085/101/625-10400746",
-      img: img2,
-      price: 3000,
-      color: "Blue",
-      size: "XL",
-      gender: "Female",
-    },
-    {
-      id: 3,
-      name: "REGULAR FIT SHERPA COLLAR TRUCKER JACKET",
-      code: "F0096/101/901-10401403",
-      img: img3,
-      price: 3000,
-      color: "Black",
-      size: "S",
-      gender: "Female",
-    },
-    {
-      id: 4,
-      name: "OVERSIZED UNISEX DENIM VARSITY JACKET",
-      code: "F0083/101/625-10400714",
-      img: img4,
-      price: 3000,
-      color: "Black",
-      size: "S",
-      gender: "Female",
-    },
-    {
-      id: 5,
-      name: "REGULAR FIT GRAPHIC HOODED JACKET",
-      code: "F0079/101/901-10385656",
-      img: img5,
-      price: 9000,
-      color: "Black",
-      size: "S",
-      gender: "Female",
-    },
-    {
-      id: 6,
-      name: "MOCK NECK PUFFER JACKET",
-      code: "F0075/101/710-10385624",
-      img: img6,
-      price: 2000,
-      color: "Black",
-      size: "S",
-      gender: "Female",
-    },
-  ];
-
+  const fetchDBData = () => {
+    return axios.get("http://localhost:3000/women");
+  };
+  const { data, isLoading } = useQuery("women", () => fetchDBData());
   return (
     <>
       <h3 className="text-3xl font-bold underline center">
@@ -100,7 +35,7 @@ function Women() {
         //   height: "100%",
         //   flexBasis: "100%",
         // }}
-        class="grid grid-cols-4"
+        class="grid grid-cols-3 gap-5"
       >
         {kapray.map((ele) => (
           <div class="max-w-sm auto-rows-auto bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 grid  ">
@@ -127,7 +62,7 @@ function Women() {
               </p>
 
               <button
-                onClick={() => handleClick(ele)}
+                onClick={() => handleClick()}
                 href="#"
                 class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 float-center"
               >
@@ -150,9 +85,8 @@ function Women() {
           </div>
         ))}
       </div>
-      <Footer />
     </>
   );
-}
+};
 
 export default Women;

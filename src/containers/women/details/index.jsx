@@ -2,6 +2,7 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import { useSelector } from "react-redux";
+import { kapray } from "../data";
 function WomenDetails() {
   const { cartItem } = useSelector((state) => state.cart);
 
@@ -17,7 +18,7 @@ function WomenDetails() {
         CART
       </div>
       {cartItem.length > 0 &&
-        cartItem.map((ele, i) => (
+        kapray.map((ele, i) => (
           <Card style={{ width: "18rem" }}>
             <h1>Item # {i + 1}</h1>
             <h3>{ele.name}</h3>
