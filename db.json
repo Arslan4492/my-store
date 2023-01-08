@@ -1,4 +1,68 @@
 {
+    "women": [
+      {
+        "id": 1,
+        "name": "REGULAR FIT TRUCKER WITH CONTRAST DETAIL",
+        "code": "F0093/101/801-10401382",
+        "img": "https://media.istockphoto.com/id/1382525457/photo/woman-in-striped-shirt.jpg?s=612x612&w=is&k=20&c=sasoJHo0VSQpMcmvf5G475jpyBmtXzwHmhGoDyly10k=",
+        "price": 3000,
+        "color": "Blue",
+        "size": "L",
+       " gender": "Female"
+      },
+      {
+        "id": 2,
+        "name": "REGULAR FIT SHERPA COLLAR TRUCKER JACKET",
+        "code": "F0085/101/625-10400746",
+        "img": "https://media.istockphoto.com/id/1362530420/photo/attractive-girl-in-eyeglasses-with-backpack-posing-on-pink-background-back-to-school-concept.jpg?s=612x612&w=is&k=20&c=AgQ9mloqm-bFYqYYK83nu4erjejZ9Jz3g3t-p44e8_4=",
+        "price": 3000,
+        "color": "Blue",
+        "size": "XL",
+        "gender": "Female"
+    },
+    {
+        "id": 3,
+        "name": "REGULAR FIT SHERPA COLLAR TRUCKER JACKET",
+        "code": "F0096/101/901-10401403",
+        "img": "img3",
+        "price": 3000,
+        "color": "Black",
+        "size": "S",
+        "gender": "Female"
+      },
+      {
+        "id": 4,
+        "name": "OVERSIZED UNISEX DENIM VARSITY JACKET",
+        "code": "F0083/101/625-10400714",
+        "img": "img4",
+        "price": 3000,
+        "color": "Black",
+        "size": "S",
+        "gender": "Female"
+    },
+    {
+        "id": 5,
+        "": "REGULAR FIT GRAPHIC HOODED JACKET",
+        "code": "F0079/101/901-10385656",
+        "img": "img5",
+        "price": 9000,
+        "color": "Black",
+        "size": "S",
+        "gender": "Female"
+    },
+    {
+        "id": 6,
+        "": "MOCK NECK PUFFER JACKET",
+        "code": "F0075/101/710-10385624",
+        "img": "img6",
+        "price": 2000,
+        "color": "Black",
+        "size": "S",
+        "gender": "Female"
+    }
+    ],
+  
+
   "summer-collection": [
     {
       "id": 61,

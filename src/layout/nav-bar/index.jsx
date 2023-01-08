@@ -1,4 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
+import Footer from "../footer";
 import { navbarData } from "./data";
 
 const NavBar = () => {
@@ -60,9 +61,10 @@ const NavBar = () => {
               </span>
             </div>
           </div>
-        </div>
-      </nav>
-    </div>
+          </div>
+        </nav>
+      </div>
+   
   );
 };
 
