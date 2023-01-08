@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import { kapray } from "../data";
 function WomenDetails() {
   const { cartItem } = useSelector((state) => state.cart);
-
+  console.log("cartItem");
   return (
     <>
       <div
