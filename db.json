@@ -397,6 +397,7 @@
       "category": "winterPants"
     },
     {
+
       "id": 14,
       "name": "Black dress pant",
       "color": "black",
@@ -442,6 +443,74 @@
           "image": "https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/04_shoes.jpg"
         }
       ]
+    }
+  ],
+  "women" : [
+    {
+      "id": 1,
+      "name": "REGULAR FIT TRUCKER WITH CONTRAST DETAIL",
+      "description": "F0093/101/801-10401382",
+      "imageSrc": "https://media.istockphoto.com/id/1382525457/photo/woman-in-striped-shirt.jpg?s=612x612&w=is&k=20&c=sasoJHo0VSQpMcmvf5G475jpyBmtXzwHmhGoDyly10k=",
+      "imageAlt": "Images",
+      "price": 3000,
+      "options": "L Blue",
+      "gender": "Female",
+      "href": "#"
+    },
+    {
+      "id": 2,
+      "name": "REGULAR FIT SHERPA COLLAR TRUCKER JACKET",
+      "description": "F0085/101/625-10400746",
+      "imageSrc": "https://media.istockphoto.com/id/1351047032/photo/portrait-of-a-young-adult-woman-against-a-white-background.jpg?s=612x612&w=is&k=20&c=04ClpoC3KP24rYNsQuI0Vq6M03tY98SCzWIWr5rFL64=",
+      "imageAlt": "",
+      "price": 3000,
+      "options": "XL Blue",
+      "gender": "Female",
+      "href": "#"
+    },
+    {
+      "id": 3,
+      "name": "REGULAR FIT SHERPA COLLAR TRUCKER JACKET",
+      "description": "F0096/101/901-10401403",
+      "imageSrc": "https://media.istockphoto.com/id/1395541220/photo/stylish-young-woman-looking-at-the-camera.jpg?s=612x612&w=is&k=20&c=dL53yBbB-kmoprFgeh7ymiA3t4hXfrRcil_ElQdma9U=",
+      "imageAlt": "",
+      "price": 3000,
+      "options": "S Black",
+      "gender": "Female",
+      "href": "#"
+    },
+    {
+      "id": 4,
+      "name": "OVERSIZED UNISEX DENIM VARSITY JACKET",
+      "description": "F0083/101/625-10400714",
+      "imageSrc": "https://media.istockphoto.com/id/1359562499/photo/outdoor-fashion-portrait-of-elegant-woman-wearing-lilac-suit-yellow-sunglasses-holding-trendy.jpg?s=612x612&w=is&k=20&c=QeluvbSI9AxzjyNdgtJoBxroIAHStPbna1gkYDXL_J0=",
+      "imageAlt": "",
+      "price": 3000,
+      "options": "S Black",
+      "gender": "Female",
+      "href": "#"
+    },
+    {
+      "id": 5,
+      "name": "REGULAR FIT GRAPHIC HOODED JACKET",
+      "description": "F0079/101/901-10385656",
+      "imageSrc": "https://media.istockphoto.com/id/1393788476/photo/happy-blonde-curly-beautiful-girl-in-coat-against-sky-charming-smile-close-up-portrait-spring.jpg?s=612x612&w=is&k=20&c=Wgv3BCJhlNhdx-spslOGRBxcHLfcf3gdbsOBZuqM1FE=",
+      "imageAlt": "",
+      "price": 9000,
+      "options": "S Black",
+      "gender": "Female",
+      "href": "#"
+    },
+    {
+      "id": 6,
+      "name": "MOCK NECK PUFFER JACKET",
+      "description": "F0075/101/710-10385624",
+      "imageSrc": "https://media.istockphoto.com/id/1362530420/photo/attractive-girl-in-eyeglasses-with-backpack-posing-on-pink-background-back-to-school-concept.jpg?s=612x612&w=is&k=20&c=AgQ9mloqm-bFYqYYK83nu4erjejZ9Jz3g3t-p44e8_4=",
+      "imageAlt": "",
+      "price": 2000,
+      "options": "S Black",
+      "gender": "Female",
+      "href": "#"
     }
   ]
 }
