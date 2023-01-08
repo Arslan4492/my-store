@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { cartSlice } from "../../store/Slice/add-to-cart";
-import Footer from "../../footer";
-import { slice } from "../../store/Slice/Cart";
 
 import { kapray } from "./data";
 

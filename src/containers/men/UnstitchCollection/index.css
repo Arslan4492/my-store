@@ -1,0 +1,15 @@
+.image_container {
+    /* height: 50%; */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    border: 5px solid white;
+}
+
+.image_container img{
+    display: block;
+    transition: transform 2s;
+}
+.image_container:hover img{
+    transform: scale(1.1);
+}

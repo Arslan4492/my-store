@@ -2,11 +2,11 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useQuery } from "react-query";
 import { useDispatch } from "react-redux";
-import { cartSlice } from "../../store/slice/add-to-cart";
+import { cartSlice } from "../../store/Slice/add-to-cart";
 const SummerCollection = () => {
   const dispatch = useDispatch();
   const getProducts = async () => {
-    const { data } = await axios.get("http://localhost:4000/summer-collection");
+    const { data } = await axios.get("http://localhost:7000/men/summer");
     console.log(data);
     return data;
   };
