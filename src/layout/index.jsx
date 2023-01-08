@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
-import Navbar from "./nav-bar";
 import Footer from "./footer";
+import Navbar from "./nav-bar";
 const AppLayout = () => {
   return (
     <div>
