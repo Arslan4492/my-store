@@ -16,13 +16,14 @@ const NavBar = () => {
               <li
                 key={item.id}
                 className={`underline-offset-4 decoration-2 decoration-black py-2 rounded-lg px-5 hover:underline ${
-                  item.pathName == pathname ? "underline" : "no-underline"
+                  item.pathName === pathname ? "underline" : "no-underline"
                 }`}
               >
                 <Link to={item.pathName}>{item.title}</Link>
               </li>
             ))}
           </ul>
+<<<<<<< HEAD
           <div className=" text-center text-base pr-5 inline-flex">
             <span
               href="#"
@@ -30,6 +31,16 @@ const NavBar = () => {
             >
               <i className="fa fa-twitter"></i>
             </span>
+=======
+          <div className=' text-center text-base pr-5 inline-flex'>
+            <Link
+              className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'
+              to='/cart'
+            >
+              <i className='fa fa-lg fa-shopping-cart '></i>
+            </Link>
+
+>>>>>>> 21e48be3c00090171824d1efd0de68a19aaad016
             <span
               href="#"
               className="w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer"

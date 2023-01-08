@@ -1,0 +1,1 @@
+export const Domain = 'http://localhost:4000'

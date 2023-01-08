@@ -1,16 +1,20 @@
+import axios from "axios";
 import { useEffect, useState } from "react";
 import { useQuery } from "react-query";
 import { useDispatch } from "react-redux";
+<<<<<<< HEAD
 import { cartSlice } from "../../store/Slice/add-to-cart";
 import { products } from "./data.js";
+=======
+import { cartSlice } from "../../store/slice/add-to-cart";
+>>>>>>> 21e48be3c00090171824d1efd0de68a19aaad016
 const SummerCollection = () => {
   const dispatch = useDispatch();
   const getProducts = async () => {
-    return products;
+    const { data } = await axios.get("http://localhost:4000/summer-collection");
+    console.log(data);
+    return data;
   };
-  useEffect(() => {
-    getProducts();
-  }, []);
 
   const { status, data, error, isFetching, isLoading, refetch } = useQuery(
     "Products",
@@ -146,7 +150,7 @@ const SummerCollection = () => {
         {isLoading || isFetching ? (
           <p>Loading...</p>
         ) : (
-          data?.products.map((product) => {
+          data?.map((product) => {
             return categories.includes(product.category) ||
               categories.length === 0 ? (
               <div

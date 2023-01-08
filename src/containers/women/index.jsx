@@ -1,14 +1,20 @@
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
+<<<<<<< HEAD
 import { slice } from "../../store/Slice/Cart";
+=======
+import { cartSlice } from "../../store/Slice/add-to-cart";
+>>>>>>> 21e48be3c00090171824d1efd0de68a19aaad016
 import Footer from "../../footer";
+import { slice } from "../../store/Slice/Cart";
+
 import { kapray } from "./data";
 
 const Women = () => {
   const dispatch = useDispatch();
 
   const handleClick = (params) => {
-    dispatch(slice.actions.addToCart(params));
+    dispatch(cartSlice.actions.addToCart(params));
   };
 
   return (
@@ -80,7 +86,6 @@ const Women = () => {
           </div>
         ))}
       </div>
-      <Footer />
     </>
   );
 };
