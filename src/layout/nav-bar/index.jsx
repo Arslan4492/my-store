@@ -5,11 +5,13 @@ import { navbarData } from "./data";
 const NavBar = () => {
   const { pathname } = useLocation();
   return (
-    <div className='flex justify-center'>
-      <nav className='self-center w-full max-w-7xl  '>
-        <div className='flex flex-col lg:flex-row justify-around items-center border-b-2'>
-          <h1 className='uppercase pl-5 py-4 text-xl font-sans font-bold'>fashionhub</h1>
-          <ul className='hidden lg:flex items-center text-[18px] font-semibold pl-32'>
+    <div className="flex justify-center">
+      <nav className="self-center w-full max-w-7xl  ">
+        <div className="flex flex-col lg:flex-row justify-around items-center border-b-2">
+          <h1 className="uppercase pl-5 py-4 text-xl font-sans font-bold">
+            fashionhub
+          </h1>
+          <ul className="hidden lg:flex items-center text-[18px] font-semibold pl-32">
             {navbarData.map((item) => (
               <li
                 key={item.id}
@@ -21,6 +23,15 @@ const NavBar = () => {
               </li>
             ))}
           </ul>
+<<<<<<< HEAD
+          <div className=" text-center text-base pr-5 inline-flex">
+            <span
+              href="#"
+              className="w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer"
+            >
+              <i className="fa fa-twitter"></i>
+            </span>
+=======
           <div className=' text-center text-base pr-5 inline-flex'>
             <Link
               className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'
@@ -29,29 +40,30 @@ const NavBar = () => {
               <i className='fa fa-lg fa-shopping-cart '></i>
             </Link>
 
+>>>>>>> 21e48be3c00090171824d1efd0de68a19aaad016
             <span
-              href='#'
-              className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'
+              href="#"
+              className="w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer"
             >
-              <i className='fa fa-instagram'></i>
+              <i className="fa fa-instagram"></i>
             </span>
             <span
-              href='#'
-              className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'
+              href="#"
+              className="w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer"
             >
-              <i className='fa fa-facebook'></i>
+              <i className="fa fa-facebook"></i>
             </span>
             <span
-              href='#'
-              className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'
+              href="#"
+              className="w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer"
             >
-              <i className='fa fa-google'></i>
+              <i className="fa fa-google"></i>
             </span>
             <span
-              href='#'
-              className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'
+              href="#"
+              className="w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer"
             >
-              <i className='fa fa-linkedin'></i>
+              <i className="fa fa-linkedin"></i>
             </span>
           </div>
         </div>

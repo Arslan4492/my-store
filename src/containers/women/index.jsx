@@ -1,6 +1,15 @@
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
+<<<<<<< HEAD
+import { slice } from "../../store/Slice/Cart";
+=======
 import { cartSlice } from "../../store/Slice/add-to-cart";
+<<<<<<< HEAD
+=======
+>>>>>>> 21e48be3c00090171824d1efd0de68a19aaad016
+import Footer from "../../footer";
+import { slice } from "../../store/Slice/Cart";
+>>>>>>> a407b96c9fdd601154509cbe948520918a2a4515
 
 import { kapray } from "./data";
 

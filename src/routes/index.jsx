@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> 21e48be3c00090171824d1efd0de68a19aaad016
+>>>>>>> a407b96c9fdd601154509cbe948520918a2a4515
 import AppLayout from "../layout";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {
