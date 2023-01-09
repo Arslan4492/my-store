@@ -4,11 +4,13 @@ import { navbarData } from "./data";
 const NavBar = () => {
   const { pathname } = useLocation();
   return (
-    <div className='flex justify-center'>
-      <nav className='self-center w-full max-w-7xl  '>
-        <div className='flex flex-col lg:flex-row justify-around items-center border-b-2'>
-          <h1 className='uppercase pl-5 py-4 text-xl font-sans font-bold'>fashionhub</h1>
-          <ul className='hidden lg:flex items-center text-[18px] font-semibold pl-32'>
+    <div className="flex justify-center">
+      <nav className="self-center w-full max-w-7xl  ">
+        <div className="flex flex-col lg:flex-row justify-around items-center border-b-2">
+          <h1 className="uppercase pl-5 py-4 text-xl font-sans font-bold">
+            fashionhub
+          </h1>
+          <ul className="hidden lg:flex items-center text-[18px] font-semibold pl-32">
             {navbarData.map((item) => (
               <li
                 key={item.id}
@@ -20,43 +22,47 @@ const NavBar = () => {
               </li>
             ))}
           </ul>
-          <div className=' text-center text-base pr-5 inline-flex'>
-            <Link
-              className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'
-              to='/cart'
+          {/* <<<<<<< HEAD */}
+          <div className=" text-center text-base pr-5 inline-flex">
+            <span
+              href="#"
+              className="w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer"
             >
-              <i className='fa fa-lg fa-shopping-cart '></i>
-            </Link>
+              <i className="fa fa-twitter"></i>
+            </span>
+            {/* ======= */}
+            <div className=" text-center text-base pr-5 inline-flex">
+              <Link
+                className="w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer"
+                to="/cart"
+              >
+                <i className="fa fa-lg fa-shopping-cart "></i>
+              </Link>
 
-            <div className=' text-center text-base pr-5 inline-flex'>
-              <span className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'>
-                <a
-                  href='https://twitter.com/bitsoltech?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor'
-                  target='_blank'
-                >
-                  <i className='fa fa-twitter'></i>
-                </a>
+              {/* >>>>>>> 21e48be3c00090171824d1efd0de68a19aaad016 */}
+              <span
+                href="#"
+                className="w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer"
+              >
+                <i className="fa fa-instagram"></i>
               </span>
-              <span className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'>
-                <a href='https://www.instagram.com/bitsoltechnologies/' target='_blank'>
-                  <i className='fa fa-instagram'></i>
-                </a>
+              <span
+                href="#"
+                className="w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer"
+              >
+                <i className="fa fa-facebook"></i>
               </span>
-              <span className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'>
-                <a href='https://web.facebook.com/bitsoltechnologies/?_rdc=1&_rdr' target='_blank'>
-                  <i className='fa fa-facebook'></i>
-                </a>
+              <span
+                href="#"
+                className="w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer"
+              >
+                <i className="fa fa-google"></i>
               </span>
-              <span className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'>
-                <a href='https://bitsol.tech/' target='_blank'>
-                  <i className='fa fa-google'></i>
-                </a>
-              </span>
-              <span className='w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer'>
-                <a href='https://www.linkedin.com/company/bitsoltech/?originalSubdomain=pk' target='_blank'>
-                  {" "}
-                  <i className='fa fa-linkedin'></i>
-                </a>
+              <span
+                href="#"
+                className="w-8 h-8 inline-block rounded-full pt-2 hover:text-blue-500 hover:cursor-pointer"
+              >
+                <i className="fa fa-linkedin"></i>
               </span>
             </div>
           </div>
@@ -68,7 +74,8 @@ const NavBar = () => {
 
 export default NavBar;
 
-// <nav className=' border-gray-200 px-2 sm:px-4 rounded dark:bg-gray-900'>
+{
+  /* // <nav className=' border-gray-200 px-2 sm:px-4 rounded dark:bg-gray-900'>
 //   <div className='container flex flex-wrap items-center justify-between mx-auto'>
 //     <Link to='/' className='flex items-center'>
 //       <img src='../cart.png' className='h-8 mr-3 sm:h-9' alt='_Logo' style={{ width: 80, height: 80 }} />
@@ -157,4 +164,5 @@ export default NavBar;
 //       </ul>
 //     </div>
 //   </div>
-// </nav>
+// </nav> */
+}
