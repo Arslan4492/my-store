@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { AppCard } from "../../components";
 import { useDispatch } from "react-redux";
-import { cartSlice } from "../../store/Slice/add-to-cart";
+import { cartSlice } from "../../store/slice/add-to-cart";
 
 export default function ChildrenCollections() {
   const { value } = useSelector((state) => state.children);

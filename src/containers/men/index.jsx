@@ -28,11 +28,14 @@ const Men = () => {
       <h2 className="flex justify-center items-center m-5 p-5">SERVER ERROR</h2>
     );
   }
-  const GoDetails = () => {
-    navigate(`/unstitch-collections/unstitch`);
+  const GoDetails = (category) => {   
+    navigate(`/men-collections/${category}`);
   };
   return (
     <div className="w-full">
+      <div className=" flex items-center px-1">
+          <span className="block">HOME</span><img src={require('../../assets/icons/right-arrow.png')} className="mx-2 opacity-[0.5]" width="20px" alt="" /> <span className="opacity-[0.3] block">MEN</span> 
+      </div>
       {categoryMen.length > 0 && (
         <div className="w-full image_container border-10 border-white hover:cursor-pointer">
           <img
@@ -40,7 +43,7 @@ const Men = () => {
             alt={`${categoryMen[0].title} image`}
           />
         </div>
-      )}
+      )}                              
 
       <div className="flex flex-row flex-wrap justify-start">
         {categoryMen.length > 0 &&
@@ -50,52 +53,14 @@ const Men = () => {
               key={category.id}
             >
               <img
-                src={category.image}
+                src={category.images[0]}
                 onClick={() => GoDetails(category.title)}
                 alt={`${category.title} image`}
               />
             </div>
           ))}
       </div>
-      {/* <<<<<<< HEAD */}
-
-      <div className="flex flex-row">
-        <div className="w-670px h-450px p-3  border-2 border-white">
-          <img
-            src="https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/03_eastern.jpg"
-            alt="T Shirt"
-            className="scale-100 hover:scale-105 ease-in duration-200"
-          />
-        </div>
-        <div className="w-670px h-450px p-3  border-2 border-white">
-          <img
-            src="https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/04_shoes.jpg"
-            alt="T Shirt"
-            className="scale-100 hover:scale-105 ease-in duration-200"
-          />
-        </div>
-      </div>
-
-      <div className="flex flex-row">
-        <div className="w-670px h-450px p-3  border-2 border-white">
-          <img
-            src="https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/03_eastern.jpg"
-            alt="T Shirt"
-            className="scale-100 hover:scale-105 ease-in duration-200"
-          />
-        </div>
-        <div className="w-670px h-450px p-3  border-2 border-white">
-          <img
-            src="https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/04_shoes.jpg"
-            alt="T Shirt"
-            className="scale-100 hover:scale-105 ease-in duration-200"
-          />
-        </div>
-      </div>
     </div>
-    // =======
-    // </div>
-    // >>>>>>> 21e48be3c00090171824d1efd0de68a19aaad016
   );
 };
 

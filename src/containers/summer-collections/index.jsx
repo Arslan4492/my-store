@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useQuery } from "react-query";
 import { useDispatch } from "react-redux";
 
-import { cartSlice } from "../../store/Slice/add-to-cart";
+import { cartSlice } from "../../store/slice/add-to-cart";
 
 // import { cartSlice } from "../../store/Slice/add-to-cart";
 import { products } from "./data.js";

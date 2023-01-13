@@ -1,15 +1,19 @@
 .image_container {
-    /* height: 50%; */
+    height: auto;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
     border: 5px solid white;
 }
 
 .image_container img{
     display: block;
+    width:100%;
+    height: 100%;
     transition: transform 2s;
 }
 .image_container:hover img{
     transform: scale(1.1);
 }
+
+
+
+
