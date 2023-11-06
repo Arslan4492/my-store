@@ -1,13 +1,12 @@
-import React from "react";
-import Card from "react-bootstrap/Card";
-import ListGroup from "react-bootstrap/ListGroup";
-import { useSelector } from "react-redux";
+// import React from "react";
+// import { useSelector } from "react-redux";
 function WomenDetails() {
-  const { cartItem } = useSelector((state) => state.cart);
+  // const { cartItem } = useSelector((state) => state.cart);
 
   return (
-    <>
-      <div
+    <div>
+      cart
+      {/* <div
         style={{
           display: "flex",
           justifyContent: "center",
@@ -55,8 +54,8 @@ function WomenDetails() {
               </div>
             </div>
           </Card>
-        ))}
-    </>
+        ))} */}
+    </div>
   );
 }
 

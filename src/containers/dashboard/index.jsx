@@ -1,85 +1,44 @@
-import React from "react";
+import Page from "@/layout/pages-layout";
+import { FormattedMessage } from "react-intl";
+import { Link } from "react-router-dom";
 
 const Dashboard = () => {
   return (
-    <div className='flex justify-center  '>
-      <div className='flex flex-col items-center justify-center'>
-        <div className='flex flex-col  max-w-7xl justify-center items-center space-y-3 w-full '>
-          <div className='flex flex-col   md:items-start items-center justify-center  space-y-3 px-8 text-center '>
-            <div className='text-3xl md:text-7xl font-bold '>Make Your Fashion Look More Charming</div>
-          </div>
-          <div className='flex flex-col lg:flex-row space-x-2 space-y-3 md:space-x-6   w-full items-center justify-center '>
-            <div className='lg:w-40 w-64 h-40  overflow-hidden rounded-xl '>
-              <img
-                src='https://source.unsplash.com/random/300x500/?man
-                                    
-                                                            '
-                alt=''
-                className=''
-              />
-            </div>
-            <div className='flex flex-row lg:flex-col space-x-3 space-y-6 items-center justify-center'>
-              <div className='w-32 lg:w-40 h-32  overflow-hidden rounded-xl '>
-                <img
-                  src='https://source.unsplash.com/random/300x500/?man
-                                    
-                                                                '
-                  alt=''
-                  className=''
-                />
-              </div>
-              <div className='w-32 lg:w-40 h-48  overflow-hidden rounded-xl '>
-                <img
-                  src='https://source.unsplash.com/random/300x500/?man
-                                    
-                                                                '
-                  alt=''
-                  className=''
-                />
-              </div>
-            </div>
-            <div className='lg:w-60 w-64 h-96  overflow-hidden rounded-xl '>
-              <img
-                src='https://source.unsplash.com/random/300x500/?man
-                                    
-                                                            '
-                alt=''
-                className=''
-              />
-            </div>
-            <div className='flex flex-row lg:flex-col space-x-3 space-y-6 items-center justify-center '>
-              <div className='w-32 lg:w-40 h-48  overflow-hidden rounded-xl '>
-                <img
-                  src='https://source.unsplash.com/random/300x500/?man
-                                    
-                                                                '
-                  alt=''
-                  className=''
-                />
-              </div>
-              <div className='w-32 lg:w-40 h-32  overflow-hidden rounded-xl '>
-                <img
-                  src='https://source.unsplash.com/random/300x500/?man
-                                    
-                                                                '
-                  alt=''
-                  className=''
-                />
-              </div>
-            </div>
-            <div className='lg:w-40 w-64 h-40  overflow-hidden rounded-xl '>
-              <img
-                src='https://source.unsplash.com/random/300x500/?man
-                                    
-                                                            '
-                alt=''
-                className=''
-              />
-            </div>
+    <Page
+      id="home"
+      spacing="pt-[120px] pb-16 md:pt-[150px] md:pb-[120px] xl:pt-[180px] xl:pb-[160px] 2xl:pt-[210px] 2xl:pb-[200px]"
+    >
+      <div className="w-full px-4">
+        <div
+          className="wow fadeInUp mx-auto max-w-[800px] text-center"
+          data-wow-delay=".2s"
+        >
+          <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
+            <FormattedMessage id="main-heading" />
+          </h1>
+          <p className="mb-12 text-base font-medium !leading-relaxed text-body-color dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
+            Startup is free Next.js template for startups and SaaS business
+            websites comes with all the essential pages, components, and
+            sections you need to launch a complete business website, built-with
+            Next 13.x and Tailwind CSS.
+          </p>
+          <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
+            <Link
+              to="/just-browsing"
+              className="rounded-md bg-primary py-4 px-8 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
+            >
+              Just Browsing
+            </Link>
+            <Link
+              to="https://github.com/NextJSTemplates/startup-nextjs"
+              className="rounded-md bg-black/20 py-4 px-8 text-base font-semibold text-black duration-300 ease-in-out hover:bg-black/30 dark:bg-white/20 dark:text-white dark:hover:bg-white/30"
+            >
+              Want To Buy
+            </Link>
           </div>
         </div>
       </div>
-    </div>
+    </Page>
   );
 };
 

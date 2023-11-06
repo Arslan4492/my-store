@@ -1,25 +1,30 @@
-import { useDispatch } from "react-redux";
-import { slice } from "../../store/Slice/Cart";
-import { kapray } from "./data";
-import AppCard from "../../components/card";
+import Page from "@/layout/pages-layout";
+import { getDataFn } from "@/utils/api";
+import { useQuery } from "@tanstack/react-query";
 
 const Women = () => {
-  const dispatch = useDispatch();
-
-  const handleClick = (params) => {
-    dispatch(slice.actions.addToCart(params));
-  };
-
+  // Queries
+  const { data: categories } = useQuery({
+    queryKey: ["categories"],
+    queryFn: getDataFn,
+  });
   return (
-    <div className='bg-white'>
-      <div className='mx-auto px-4'>
-        <div className='grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-3 lg:gap-x-8'>
-          {kapray.map((ele) => (
-            <AppCard item={ele} handleAddToCart={(item) => handleClick(item)} />
+    <Page
+      id="women"
+      spacing="pt-[120px] pb-16 md:pt-[150px] md:pb-[120px] xl:pt-[180px] xl:pb-[160px] 2xl:py-[150px]"
+    >
+      <div className="grid grid-cols-2 flex-row flex-wrap justify-start gap-4">
+        {categories &&
+          categories?.subCategories.map((category) => (
+            <img
+              alt={`${category.title} image`}
+              className="w-full rounded-lg shadow-lg object-cover cursor-pointer"
+              key={category.id}
+              src={category.image}
+            />
           ))}
-        </div>
       </div>
-    </div>
+    </Page>
   );
 };
 

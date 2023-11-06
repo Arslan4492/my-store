@@ -1,44 +1,44 @@
-import React, { useEffect, useState } from "react"
-import { getCategories } from "../../API"
-import { useQuery } from 'react-query'
-import './index.css';
+import { useQuery } from "@tanstack/react-query";
+import { getDataFn } from "@/utils/api";
+import Page from "@/layout/pages-layout";
 
 const Men = () => {
-  const { isLoading, error, data:categories }  = useQuery('categories', getCategories)
-  const [categoryMen,setCategoryMen] = useState([])
+  // Queries
+  const {
+    isLoading,
+    error,
+    data: categories,
+  } = useQuery({ queryKey: ["categories"], queryFn: getDataFn });
 
-  useEffect(() => {
-    if(categories) setCategoryMen(categories.filter(c=>c.title==="MEN"))
-  }, [categories]);
-  
-  if(isLoading){
-    return <h2 className="flex justify-center items-center m-5 p-5">lOADING...</h2>
+  if (isLoading) {
+    return (
+      <h2 className="flex justify-center items-center m-5 p-5">lOADING...</h2>
+    );
   }
 
-  if(error){
-    return <h2 className="flex justify-center items-center m-5 p-5">SERVER ERROR</h2>
+  if (error) {
+    return (
+      <h2 className="flex justify-center items-center m-5 p-5">SERVER ERROR</h2>
+    );
   }
 
   return (
-    <div className="w-full">
-    {categoryMen.length>0 && ( <div className="w-full image_container border-10 border-white hover:cursor-pointer">
-        <img
-          src={categoryMen[0].image}
-          alt={`${categoryMen[0].title} image`}
-        />
-      </div>)}
-
-      <div className="flex flex-row flex-wrap justify-start">
-     {categoryMen.length>0 && categoryMen[0]?.subCategories.map((category)=>
-     (<div className="w-1/2 border-10 border-white hover:cursor-pointer image_container" key={category.id}>
-          <img
-            src={category.image}
-            alt={`${category.title} image`}
-          />
-        </div>)
-        ) }
+    <Page
+      id="men"
+      spacing="pt-[120px] pb-16 md:pt-[150px] md:pb-[120px] xl:pt-[180px] xl:pb-[160px] 2xl:py-[150px]"
+    >
+      <div className="grid grid-cols-2 flex-row flex-wrap justify-start gap-4">
+        {categories &&
+          categories?.subCategories.map((category) => (
+            <img
+              alt={`${category.title} image`}
+              className="w-full rounded-lg shadow-lg object-cover cursor-pointer"
+              key={category.id}
+              src={category.image}
+            />
+          ))}
       </div>
-    </div>
+    </Page>
   );
 };
 

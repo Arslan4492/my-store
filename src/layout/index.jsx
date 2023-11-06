@@ -1,19 +1,21 @@
 import { Outlet } from "react-router-dom";
+import Header from "./header";
+import ScrollToTop from "./scroll-to-top";
 import Footer from "./footer";
-import Navbar from "./nav-bar";
+import { useEffect } from "react";
+import { checkAppTheme } from "@/utils/local-storage-items";
 
 const AppLayout = () => {
+  useEffect(() => {
+    checkAppTheme();
+  }, []);
+
   return (
-    <div>
-      <div className='content-container h-full col-span-5'>
-        <Navbar />
-        <div className='flex flex-col p-3 m-0 w-full h-full'>
-          <div className='flex-fill'>
-            <Outlet />
-          </div>
-        </div>
-      </div>
+    <div className="dark:bg-black">
+      <Header />
+      <Outlet />
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };
