@@ -1,0 +1,41 @@
+/*CREATING AN ANIMATED LOADING SCREEN FOR SQUARESPACE (7.0 & 7.1)*/
+
+.loading-screen {
+    animation: goodbyeScreen .5s forwards 3.5s cubic-bezier(.5, -.75, .7, 2);
+    background-color: #fafafa7c;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+
+.loading-screen-image {
+    animation: scrollingLogo 1 3s linear;
+    background-image: url('../../../assets/logo/app-logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 190px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 190px;
+}
+
+
+@keyframes scrollingLogo {
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+
+@keyframes goodbyeScreen {
+    to {
+        transform: translateX(-100%);
+    }
+}

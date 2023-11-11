@@ -415,31 +415,87 @@
       "category": "winterPants"
     }
   ],
-  "categories": {
-    "id": 1,
-    "title": "MEN",
-    "image": "https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/05_inside_banner_wb.jpg",
-    "subCategories": [
-      {
-        "id": 2,
-        "title": "UNSTITCHED",
-        "image": "https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/01_unstitched.jpg"
-      },
-      {
-        "id": 3,
-        "title": "WESTERN",
-        "image": "https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/02_western.jpg"
-      },
-      {
-        "id": 4,
-        "title": "EASTERN",
-        "image": "https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/03_eastern.jpg"
-      },
-      {
-        "id": 5,
-        "title": "SHOES",
-        "image": "https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/04_shoes.jpg"
-      }
-    ]
-  }
+  "categories": [
+    {
+      "id": 1,
+      "title": "MEN",
+      "image": "https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/05_inside_banner_wb.jpg",
+      "subCategories": [
+        {
+          "id": 2,
+          "title": "UNSTITCHED",
+          "image": "https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/01_unstitched.jpg"
+        },
+        {
+          "id": 3,
+          "title": "WESTERN",
+          "image": "https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/02_western.jpg"
+        },
+        {
+          "id": 4,
+          "title": "EASTERN",
+          "image": "https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/03_eastern.jpg"
+        },
+        {
+          "id": 5,
+          "title": "SHOES",
+          "image": "https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/04_shoes.jpg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "WOMEN",
+      "image": "https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/05_inside_banner_wb.jpg",
+      "subCategories": [
+        {
+          "id": 2,
+          "title": "UNSTITCHED",
+          "image": "https://shehrnaz.com/wp-content/uploads/2021/03/25.jpg"
+        },
+        {
+          "id": 3,
+          "title": "WESTERN",
+          "image": "https://www.shahifits.in/wp-content/uploads/2023/04/Latest-Western-Dresses-in-Fashion-Frock-Top.jpg"
+        },
+        {
+          "id": 4,
+          "title": "EASTERN",
+          "image": "https://busbeestyle.com/wp-content/uploads/2022/04/What-I-Wore-in-Cairo-Egypt-while-visiting-pyarmids.jpg"
+        },
+        {
+          "id": 5,
+          "title": "SHOES",
+          "image": "https://hips.hearstapps.com/netdoctor.cdnds.net/16/31/4000x2000/landscape-1470061110-shoes1.jpg?resize=980:*"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "CHILDREN",
+      "image": "https://www.gulahmedshop.com/media/wysiwyg/cms-page/01_men_clothes/22_12_01/05_inside_banner_wb.jpg",
+      "subCategories": [
+        {
+          "id": 1,
+          "title": "UNSTITCHED",
+          "image": "https://shehrnaz.com/wp-content/uploads/2021/03/25.jpg"
+        },
+        {
+          "id": 2,
+          "title": "WESTERN",
+          "image": "https://www.shahifits.in/wp-content/uploads/2023/04/Latest-Western-Dresses-in-Fashion-Frock-Top.jpg"
+        },
+        {
+          "id": 3,
+          "title": "EASTERN",
+          "image": "https://busbeestyle.com/wp-content/uploads/2022/04/What-I-Wore-in-Cairo-Egypt-while-visiting-pyarmids.jpg"
+        },
+        {
+          "id": 4,
+          "title": "SHOES",
+          "image": "https://hips.hearstapps.com/netdoctor.cdnds.net/16/31/4000x2000/landscape-1470061110-shoes1.jpg?resize=980:*"
+        }
+      ]
+    }
+  ]
 }

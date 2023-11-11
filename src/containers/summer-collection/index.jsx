@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { useDispatch } from "react-redux";
 import { cartSlice } from "../../store/Slice/add-to-cart";
@@ -8,11 +8,10 @@ const SummerCollection = () => {
   const dispatch = useDispatch();
   const getProducts = async () => {
     const { data } = await axios.get("http://localhost:4000/summer-collection");
-    console.log(data);
     return data;
   };
 
-  const { status, data, error, isFetching, isLoading, refetch } = useQuery(
+  const { data, isFetching, isLoading, refetch } = useQuery(
     "Products",
     getProducts,
     {
@@ -148,7 +147,7 @@ const SummerCollection = () => {
       ) : (
         <div className="bg-white">
           <div className="mx-auto max-w-2xl pb-16 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-            <h1 class="text-center text-4xl mb-10 font-bold text-slate-900">
+            <h1 className="text-center text-4xl mb-10 font-bold text-slate-900">
               Summer Collection
             </h1>
             <div className="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-3 lg:gap-x-8">
